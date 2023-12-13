@@ -1,19 +1,29 @@
 body{
     background: #000000;
+    font-family: 'Noto Sans TC', sans-serif;
 }
-/* module */
-.list-unstyled{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+:root{
+    --primary-color-text: #FFF;
+    
 }
 
 /* header */
 .main-header{
     padding: 14px 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 40px;
+}
+.header{
+    border-bottom: 1px solid #FFF;
+    display: flex;
+    width: 1296px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
 }
 .logo{
     width: 40px;
@@ -21,8 +31,74 @@ body{
     flex-shrink: 0;
     margin-right: 16px;
 }
-.ai{
-    width: 188.995px;
-    height: 40px;
-    flex-shrink: 0;
-}
+/* @media screen and (max-width:768px) {
+    .main-header{
+        padding: 0 12px 0 12px;
+        height: 80px;
+    }
+    .header{
+        border-bottom: 1px solid #FFF;
+        display: flex;
+        width: 351px;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 24px;
+        height: 24px;
+    }
+    .ai{
+        width: 113.397px;
+        height: 24px;
+    }
+    .headerText{
+        background-image: url("../image/Menu.svg");
+    }
+    .headerText a{
+        display: none;
+    }
+    .ai{
+        width: 188.995px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    /* banner區 */
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    .banner span{
+        font-size: 120px;
+        color: var(--primary-color-text);
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        width: 1296px;
+    }
+    .headerText a{
+        text-decoration: none;
+        color: var(--primary-color-text);
+        padding: 12px 0px;
+    }
+    .banner input{
+        margin-top: 40px;
+        border-radius: 16px;
+        border: 1px solid var(--primary-color-text);
+        display: flex;
+        width: 160px;
+        height: 64px;
+        padding: 20px 40px;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 900;
+        background-color: #000000;
+        color: #FFF;
+        cursor:pointer;
+    }
+    .grass{
+        display: flex;
+        justify-content: flex-end;
+    }
