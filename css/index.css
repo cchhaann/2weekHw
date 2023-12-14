@@ -1,15 +1,22 @@
 body{
     background: #000000;
     font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+    max-width: 1920px;
 }
 :root{
     --primary-color-text: #FFF;
     
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
+.comtainer{
+    max-width: 1920px;
+}
 /* header */
 .main-header{
-    padding: 14px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,28 +26,22 @@ body{
 .header{
     border-bottom: 1px solid #FFF;
     display: flex;
-    width: 1296px;
+    width: 85%;
     height: 80px;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
 }
+
 .logo{
     width: 40px;
     height: 40px;
     flex-shrink: 0;
     margin-right: 16px;
 }
-/* @media screen and (max-width:768px) {
-    .main-header{
-        padding: 0 12px 0 12px;
-        height: 80px;
-    }
-    .header{
-        border-bottom: 1px solid #FFF;
+@media (max-width: 768px) {
+    .ailogo{
         display: flex;
-        width: 351px;
-        height: 80px;
         justify-content: space-between;
         align-items: center;
     }
@@ -52,53 +53,71 @@ body{
         width: 113.397px;
         height: 24px;
     }
-    .headerText{
-        background-image: url("../image/Menu.svg");
+}
+/* banner區 */
+main{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.banner span{
+    font-size: 120px;
+    color: var(--primary-color-text);
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+}
+.headerText{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.headerText a{
+    text-decoration: none;
+    color: var(--primary-color-text);
+    padding: 12px 0px;
+}
+.headerText img{
+    display: none;
+}
+@media (max-width: 768px) {
+    main{
+        margin-left: 12px;
+    }
+    .banner span{
+        font-size: 48px;
     }
     .headerText a{
         display: none;
     }
-    .ai{
-        width: 188.995px;
-        height: 40px;
-        flex-shrink: 0;
+    .headerText img{
+        display: block;
     }
-
-    /* banner區 */
-    main{
-        display: flex;
-        justify-content: center;
-    }
-    .banner span{
-        font-size: 120px;
-        color: var(--primary-color-text);
-        font-weight: 900;
-        display: flex;
-        flex-direction: column;
-        width: 1296px;
-    }
-    .headerText a{
-        text-decoration: none;
-        color: var(--primary-color-text);
-        padding: 12px 0px;
-    }
-    .banner input{
-        margin-top: 40px;
-        border-radius: 16px;
-        border: 1px solid var(--primary-color-text);
-        display: flex;
-        width: 160px;
-        height: 64px;
-        padding: 20px 40px;
-        align-items: center;
-        gap: 10px;
-        font-size: 20px;
-        font-weight: 900;
-        background-color: #000000;
-        color: #FFF;
-        cursor:pointer;
-    }
+}
+.banner input{
+    border-radius: 16px;
+    margin-top: 40px;
+    display: flex;
+    border: 1px solid var(--primary-color-text);
+    height: 64px;
+    width: 160px;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 20px;
+    gap: 10px;
+    background-color: #000000;
+    font-weight: 900;
+    cursor:pointer;
+    color: #FFF;
+}
+.grass{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+    width: 95%;
+}
+@media (max-width: 768px) {
     .grass{
-        display: flex;
-        justify-content: flex-end;
+        margin-top: 180px;
     }
+}

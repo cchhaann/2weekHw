@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" >
     <title>AI工具王</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -12,16 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="comtainer">
         <header class="main-header">
             <div class="header">
-                <div>
+                <div class="ailogo">
                     <a href="/"><img class="logo" src="./image/logo.svg" alt="logo"></a>
                     <a href="/"><img class="ai" src="./image/AI工具王.svg" alt="ai"></a>
                 </div>
-                <div class="headerText">
-                    <a href="">首頁</a>
-                    <a href="">定價</a>
-                </div>
+                <ul class="headerText">
+                    <li><a href="">首頁</a></li>
+                    <li><a href="">定價</a></li>
+                    <img src="./image/Menu.svg" alt="Menu">
+                </ul>
             </div>
         </header>
         <main>
@@ -31,12 +33,13 @@
                 <span>強大模型</span>
                 <span>讓您的業務更聰明</span>
                 <input type="button" value="開始使用" />
-                <div class="grass">
-                    <img src="./image/motin.svg" at="grass">
-                </div>
+
             </section>
         </main>
-
+        <div class="grass">
+            <img src="./image/motin.svg" at="grass">
+        </div>
+    </div>
 
 </body>
 </html>
