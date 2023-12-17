@@ -30,13 +30,11 @@ img{
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .logo{
     width: 40px;
     height: 40px;
-    flex-shrink: 0;
     margin-right: 16px;
 }
 @media (max-width: 768px) {
@@ -118,6 +116,562 @@ main{
 }
 @media (max-width: 768px) {
     .grass{
-        margin-top: 180px;
+        margin: 180px 12px 0 12px;
+    }
+}
+/* 第二部分 */
+.servicePurpose{
+    margin: 160px 0 160px 0;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+.service{
+    display: flex;
+    gap: 24px;
+    width: 80%;
+    justify-content: space-between;
+}
+.ourService{
+    color: var(--primary-color-text);
+    font-size: 32px;
+    font-weight: 900;
+}
+.purpose{
+    text-transform: none;
+    color: var(--primary-color-text);
+    font-weight: 900;
+    font-size: 48px;
+    width: 68%;
+    
+}
+@media (max-width: 768px) {
+    .servicePurpose{
+        margin: 62px 0 178px 12px;
+        height: 1192px;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-left: 12px;
+        width: 80%;          
+    }
+    .ourService{
+        font-size: 20px;
+    }
+    .purpose{
+        font-size: 32px;
+        width: 110%;
+    }
+}
+/* 卡片區 */
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    height: 366px;
+    width: 80%;
+}
+.card{
+    width: 80%;
+    border-radius: 16px;
+    border: 1px solid #525252;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.card img{
+    width: 80px;
+    height: 80px;
+}
+.card-body h1{
+    font-size: 32px;
+    color: var(--primary-color-text);
+}
+.card-body span{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color-text);
+}
+@media (max-width: 768px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 120px;
+        
+    }
+    .card{
+        padding: 40px 20px;
+    }
+}
+/* 第三部分 */
+.partners{
+    margin-top: 160px;
+    margin-bottom: 153px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partner{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 160px;
+}
+.ourPartner{
+    color: var(--primary-color-text);
+    font-size: 32px;
+    font-weight: 900;
+}
+.gap{
+    margin:80px 0 20px 0;
+}
+.logo3{
+    display: none;
+}
+@media (max-width: 768px) {
+    .partners{
+        margin-top: 178px;
+        margin-left: 12px;
+    }
+    .partner{
+        margin-bottom: 48px;
+    }
+    .gap, .logo2{
+        display: none;
+    }
+    .logo3{
+        display: block;
+        margin-top: 24px;
+    }
+}
+.partnerCards{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    gap: 24px;
+}
+.partnerCard{
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
+}
+.partnerComment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    max-width: 336px;
+}
+.commentText{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    height: 215px;
+}
+.partnerText{
+    display: flex;
+    gap:16px;
+}
+.partnerAvatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+}
+.partnerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+.partnerName{
+    font-size: 16px;
+    font-weight: 700;
+    color:var(--primary-color-text);
+}
+.partnerCo{
+    font-size: 14px;
+    font-weight: 400;
+    color:var(--primary-color-text);
+}
+.mobile{
+    display: none;
+}
+@media (max-width: 768px) {
+    .partnerCards{
+        height: 289px;
+    }
+    .partnerCards .partnerCard:nth-child(n+2) {
+        display: none;
+    }
+    .partnerCards .partnerCard:first-child {
+        display: block;
+    }
+    .partnerCard{
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .commentText{
+        height: 144px;
+    }
+    .mobile{
+        display: flex;
+
+    }
+
+}
+.application{
+    height: 1918px;
+    border-radius: 160px;
+    background-color: var(--primary-color-text);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 160px;
+    margin-bottom: 40px;
+    gap: 80px;
+}
+.box span{
+    color: #020202;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;   
+}
+.search{
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 16px;
+    background: #F2F2F2;
+    width: 80%;
+}
+.filter{
+    display: flex;
+    width: 80%;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+.filterIcon{
+    display: flex;
+    padding: 20px 32px 20px 40px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 16px;
+    border: 1px solid #F2F2F2;
+    background: var(--primary-color-text);
+}
+.filterIcon:nth-child(2) {
+    order: 3;
+}
+.filterAll{
+    display: flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 16px;
+    background:  #F2F2F2;
+    font-size: 16px;
+    Font-weight: 700;
+    color: #020202;
+    text-align: center;
+}
+.filterChoice{
+    display: flex;
+}
+.filterOthers{
+    display: flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    color: #919191;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+    .application{
+        height: 4046px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        padding-top: 80px;
+        margin-left: 12px;
+        margin-bottom: 48px;
+        width: 95%;
+    }
+    .box span{
+        font-size: 32px;  
+    }
+    .search{
+        width: 75%;
+    }
+    .filter{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        height: auto;
+    }
+    .filterIcon{
+        display: flex;
+        gap: 12px;
+        width: 95%;
+    }
+    .filterIcon:nth-child(2) {
+        order: 0;
+    }
+    .filterChoice{
+        display: flex;
+        gap: 8px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .filterAll{
+        width: 100%;
+    }
+}
+.applicatioCards{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 24px;
+}
+.applicatioCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid #F2F2F2;
+    flex-basis: 416px;
+}
+.applicatioCard img{
+    border-radius: 16px;
+}
+.text{
+    display: flex;
+    padding: 20px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    flex-grow: 1;
+}
+.textTittle{
+    color:#020202;
+    font-size: 20px;
+    font-weight: 900;
+}
+.textInfo{
+    color: #525252;
+    font-size: 14px;
+    font-weight: 400;
+}
+.type{
+    display: flex;
+    padding: 20px 32px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.typeTittle{
+    color: #020202;
+    font-size: 16px;
+    font-weight: 700;
+}
+.share{
+    display: flex;
+    padding: 20px 32px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    cursor: pointer;
+}
+.pageBox{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: center;
+    color: #020202;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.pages{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+    cursor: pointer;
+}
+.pageOneBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: var(--Black-0, #FFF);
+    background-color: #000000;
+    border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .applicatioCards{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 48px 12px 0 12px;
+    }
+    .pages{
+        margin-left: 70px;
+        margin-right: 55px;
+    }
+}
+.start{
+    display: flex;
+    padding: 80px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.start span{
+    color: var(--primary-color-text);
+    font-size: 48px;
+    font-weight: 900;
+}
+.btn{
+    display: flex;
+    padding: 20px 32px 20px 40px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 16px;
+    border: 1px solid #FFF;
+    color: var(--Black-0, #FFF);
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .start{
+        padding: 120px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    .start span{
+        width: 224px;
+        height: 76px;
+        font-size: 32px;
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.footerAll{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.footerBanner{
+    display: flex;
+    padding: 80px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.footerBanner span{
+    color: var(--primary-color-text);
+    font-size: 80px;
+    font-weight: 900;
+}
+.footertittle{
+    display: flex;
+    flex-direction: column;
+}
+.footerText{
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    gap: 20px;
+    color: var(--Black-0, #FFF);
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: space-between;
+}
+.footerbottom{
+    display: flex;
+    align-items: center;
+}
+.copyright{
+    padding: 12px 80px 12px 0px;
+}
+.social{
+    display: flex;
+    gap: 20px;
+}
+.top{
+    color: var(--primary-color-text);
+    font-size: 16px;
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+    .footerAll{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+    }
+    .footerBanner{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .footerbottom{
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footerBanner span{
+        font-size: 48px;
+    }
+    .footerText{
+        display: flex;
+        padding: 20px 0px;
+        align-items: center;
+        gap: 12px;
+        color: var(--Black-0, #FFF);
+        font-size: 16px;
+        font-weight: 700;
+        justify-content: space-between;
+    }
+    .top{
+        width: 100px;
     }
 }
